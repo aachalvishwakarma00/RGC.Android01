@@ -1,10 +1,10 @@
-void main()
-{
-	List gfg = new List(3);
-	gfg[0] = 'welcome';
-	gfg[1] = 'to';
-	gfg[2] = 'university';
-	
-	print(gfg);
-	print(gfg[0]);
+void main() {
+  List<String> RCG = ['welcome', 'to', 'university'];
+
+  // Printing the whole list
+  print(RCG); // Output: [welcome, to, university]
+
+  // Accessing elements in the list
+  print(RCG[0]); // Output: welcome
 }
+
