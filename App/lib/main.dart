@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dart:io';
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:flutter_pdfview/flutter_pdfview.dart';
@@ -28,7 +27,7 @@ class _MyAppState extends State<MyApp> {
       });
     });
 
-    getFileFromUrl("file:///C:/flutter/App/asset/mypdf.pdf").then((f) {
+    getFileFromUrl("http://www.pdf995.com/samples/pdf.pdf").then((f) {
       setState(() {
         urlPDFPath = f.path;
         print(urlPDFPath);
@@ -70,7 +69,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Flutter PDF Tutorial"),
+          title: Text("Flutter PDF "),
         ),
         body: Center(
           child: Builder(
